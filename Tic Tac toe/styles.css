@@ -1,0 +1,62 @@
+﻿body {
+    background-color: #f0f8ff; /* Light blue background */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #ff69b4; /* Hot pink */
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 2px solid #ff69b4; /* Pink border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #e0ffff; /* Light cyan */
+}
+
+button {
+    background-color: #ff69b4; /* Pink background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ff1493; /* Deep pink */
+}
+
+#status {
+    font-size: 18px;
+    color: #000000; /* Black text */
+}
